@@ -51,7 +51,7 @@ namespace PracticeOverloading_Interfaces
 
           public static bool operator == (Angles a, Angles b)
           {
-               return (a.Seconds == b.Seconds) ? true : false;
+               return a.Seconds == b.Seconds;
           }
 
           public static bool operator != (Angles a, Angles b)
