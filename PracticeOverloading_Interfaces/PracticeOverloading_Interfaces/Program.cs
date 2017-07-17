@@ -66,17 +66,16 @@ namespace PracticeOverloading_Interfaces
      }
      class Program
      {
-          static void Main(string[] args)
-          {
-               Angles a = new Angles(-10,-5,-10);
-               Angles b = new Angles(0, 0 ,55);
-               a.Show();
-               b.Show();
-               (a + b).Show();
-               Angles c = (a * 10);
-               c.Show();
-               Console.WriteLine(a==b);
-               Console.WriteLine(a!=b);
-          }
-     }
+        static void Main(string[] args)
+        {
+            Angles a = new Angles(-10, -5, -10);
+            Angles b = new Angles(0, 0, 55);
+            a.Show();
+            b.Show();
+            Angles c = a + b;
+            c.Show();
+            Console.WriteLine(a == b);
+            Console.WriteLine(a != b);
+        }
+    }
 }
